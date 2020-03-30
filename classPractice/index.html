@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React 1</title>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script type="text/babel" src="./Corona.js"></script>
+    <script type="text/babel" src="./Name.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      let markup = (
+        <div>
+          <Name name="austin" city="Austin" />
+          <Name name="jaye" city="Katy" />
+          <Name name="daniel" city="Houston" />
+        </div>
+      );
+      ReactDOM.render(markup, document.getElementById("root"));
+      //   ReactDOM.render(<Name />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
