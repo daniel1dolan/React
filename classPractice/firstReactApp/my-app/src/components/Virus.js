@@ -3,9 +3,11 @@ import React from "react";
 function Virus(props) {
   return (
     <div>
-      {props.virus}
-      <br />
-      {props.country}
+      <div className="col s2">
+        {props.country}
+        <br />
+        {props.cases}
+      </div>
     </div>
   );
 }
