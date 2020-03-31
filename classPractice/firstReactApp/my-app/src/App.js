@@ -3,22 +3,33 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import Drop from "./components/Drop";
 import Calculator from "./components/calculator/Calculator";
+import Comments from "./comments/Comments";
 
 class App extends Component {
   render() {
     return (
-      <Container fluid>
-        <Row>
-          <Col md={{ span: 4, offset: 3 }}>
-            <Calculator />
-          </Col>
-        </Row>
-      </Container>
+      <>
+        <Comments />
+      </>
     );
   }
 }
 
 export default App;
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <Container fluid>
+//         <Row>
+//           <Col md={{ span: 4, offset: 3 }}>
+//             <Calculator />
+//           </Col>
+//         </Row>
+//       </Container>
+//     );
+//   }
+// }
 
 // let daysOfWeek = [
 //   "Monday",

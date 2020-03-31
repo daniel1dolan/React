@@ -28,5 +28,6 @@
   margin: 0px;
 }
 .yellow {
-  background-color: yellow;
+  background-color: orange;
+  font-weight: bold;
 }
