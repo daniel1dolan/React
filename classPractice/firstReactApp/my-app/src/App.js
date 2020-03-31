@@ -1,26 +1,16 @@
 import React, { Component } from "react";
-import SimpleDropdown from "./SimpleDropdown";
+// import SimpleDropdown from "./SimpleDropdown";
 import { Container, Row, Col } from "react-bootstrap";
-import Drop from "./components/Drop";
-
-let daysOfWeek = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-  "Sunday"
-];
+// import Drop from "./components/Drop";
+import Calculator from "./components/calculator/Calculator";
 
 class App extends Component {
   render() {
     return (
       <Container fluid>
         <Row>
-          <Col md={{ span: 4, offset: 4 }}>
-            {/* <SimpleDropdown days={daysOfWeek} /> */}
-            <Drop days={daysOfWeek} />
+          <Col md={{ span: 4, offset: 3 }}>
+            <Calculator />
           </Col>
         </Row>
       </Container>
@@ -30,15 +20,40 @@ class App extends Component {
 
 export default App;
 
+// let daysOfWeek = [
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday",
+//   "Sunday"
+// ];
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <Container fluid>
+//         <Row>
+//           <Col md={{ span: 4, offset: 4 }}>
+//             {/* <SimpleDropdown days={daysOfWeek} /> */}
+//             <Drop days={daysOfWeek} />
+//           </Col>
+//         </Row>
+//       </Container>
+//     );
+//   }
+// }
+
 // class App extends Component {
 //   render() {
 //     return (
 //       <div
-//         style={{
-//           backgroundColor: "green",
-//           padding: "15px",
-//           margin: "50px"
-//         }}
+// style={{
+//   backgroundColor: "green",
+//   padding: "15px",
+//   margin: "50px"
+// }}
 //       >
 //         <Parent />
 //       </div>
