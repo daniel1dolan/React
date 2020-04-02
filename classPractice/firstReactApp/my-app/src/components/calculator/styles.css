@@ -1,5 +1,5 @@
 .fullCalculator {
-  padding: 20px;
+  /* padding: 20px; */
   margin: 20px;
   width: 500px;
   height: 600px;
@@ -23,6 +23,7 @@
   height: 50px;
   background-color: white;
   margin: 20px;
+  padding: 0;
 }
 .buttonRow {
   margin: 0px;
@@ -30,4 +31,11 @@
 .yellow {
   background-color: orange;
   font-weight: bold;
+}
+button {
+  background-color: white;
+  border: none;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
 }
