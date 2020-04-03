@@ -8,7 +8,8 @@ class TodoList extends Component {
     super(props);
     this.state = {
       tasks: [],
-      inputTxt: ""
+      inputTxt: "",
+      completedTasks: []
     };
   }
   handleInput = e => {
@@ -24,8 +25,12 @@ class TodoList extends Component {
     });
   };
   completeTask = e => {
-    let completedTask = e.target.id;
-    console.log(completedTask);
+    let selectedTask = e.target.value;
+    let taskArray = this.state.tasks;
+    let completeArray = this.state.completedTasks;
+    completeArray.push(taskArray[selectedTask]);
+    delete taskArray[selectedTask];
+    this.setState({ tasks: taskArray, completedTasks: completeArray });
   };
   render() {
     return (
@@ -35,10 +40,13 @@ class TodoList extends Component {
           txt={this.state.inputTxt}
           handleChange={this.handleInput}
           addTask={this.addTaskItem}
-          completeTask={this.completeTask}
         />
         <br />
-        <TodoItem tasks={this.state.tasks} />
+        <TodoItem
+          tasks={this.state.tasks}
+          completedTask={this.completeTask}
+          completedTaskArray={this.state.completedTasks}
+        />
       </div>
     );
   }
