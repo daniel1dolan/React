@@ -8,6 +8,7 @@ import Blogs from "./Todo/Blogs";
 import NoMatch from "./Todo/NoMatch";
 import CoronaData from "./CoronaData";
 import Forms from "./Forms";
+import LiftingState from "./LiftingState";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 ReactDOM.render(
@@ -22,6 +23,7 @@ ReactDOM.render(
         <Route path="/blogs/:blogID" component={Blogs} />
         <Route path="/corona" component={CoronaData} />
         <Route path="/forms" component={Forms} />
+        <Route path="/liftingstate" component={LiftingState} />
         <Route component={NoMatch} />
       </Switch>
     </BaseLayout>

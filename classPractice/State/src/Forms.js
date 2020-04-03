@@ -21,6 +21,14 @@ class Forms extends Component {
     // console.log(targetType);
     let name = e.target.name;
     // console.log(name);
+    this.setState(
+      {
+        [name]: targetType
+      },
+      () => {
+        console.log(this.state);
+      }
+    );
   };
   render() {
     return (
