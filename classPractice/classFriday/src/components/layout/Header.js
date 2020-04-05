@@ -10,6 +10,7 @@ const Header = () => {
           <Nav.Link href="/">Click Counter</Nav.Link>
           <Nav.Link href="/todo">Todo List</Nav.Link>
           <Nav.Link href="/projectmanagement">Project Management</Nav.Link>
+          <Nav.Link href="/contacts">Contact List</Nav.Link>
         </Nav>
       </Navbar>
     </>
