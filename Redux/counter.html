@@ -7,8 +7,16 @@
   </head>
   <body>
     <h1 id="count-display">0</h1>
+    <button onclick="addButton()">Add</button>
+    <button onclick="subtractButton()">Subtract</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
     <script>
+      function addButton() {
+        store.dispatch(add());
+      }
+      function subtractButton() {
+        store.dispatch(subtract());
+      }
       function add() {
         return {
           type: "ADD"
@@ -45,11 +53,10 @@
         let display = document.getElementById("count-display");
         display.innerHTML = store.getState().count;
       }
-      store.dispatch(add());
-      store.dispatch(add());
-      store.dispatch(add());
-      store.dispatch(add());
-      store.dispatch(subtract());
+      //   store.dispatch(add());
+      //   store.dispatch(add());
+      //   store.dispatch(add());
+      //   store.dispatch(subtract());
     </script>
   </body>
 </html>
