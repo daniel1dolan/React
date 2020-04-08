@@ -9,7 +9,7 @@ class AddProject extends React.Component {
     super(props);
     this.state = {
       title: "",
-      category: ""
+      category: "Front-End"
     };
   }
   handleTitleChange = e => {
