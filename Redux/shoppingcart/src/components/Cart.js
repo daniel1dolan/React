@@ -33,6 +33,7 @@ class Cart extends Component {
             })}
           </tbody>
         </table>
+        <h5>Total Cost: ${this.props.totalCost} USD</h5>
       </div>
     );
   }

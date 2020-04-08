@@ -1,7 +1,7 @@
 let cartReducer = (state, action) => {
   if (state === undefined) {
     state = {
-      totalCost: 0,
+      totalCost: 99,
       productCart: [
         {
           productName: "Gucci Flip Flops",
