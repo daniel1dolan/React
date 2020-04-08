@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import addProduct from "../actions/addProduct";
+import "./styles.css";
 
 class AddProduct extends Component {
   constructor(props) {
@@ -39,7 +40,7 @@ class AddProduct extends Component {
   };
   render() {
     return (
-      <>
+      <div className="main">
         Add Product
         <form onSubmit={this.onSubmitHandler}>
           <label>Product Name</label>
@@ -60,7 +61,7 @@ class AddProduct extends Component {
             Submit
           </button>
         </form>
-      </>
+      </div>
     );
   }
 }
