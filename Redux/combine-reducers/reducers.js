@@ -113,14 +113,14 @@
 
 // let newState = [...state.slice(0, 3), newItem, ...state.slice(3)];
 
-let state = [1, 2, "X", 4];
+// let state = [1, 2, "X", 4];
 
-let newState = state.filter(item => {
-  if (item == "X") {
-    return false;
-  }
-  return true;
-});
+// let newState = state.filter(item => {
+//   if (item == "X") {
+//     return false;
+//   }
+//   return true;
+// });
 
-console.log(state);
-console.log(newState);
+// console.log(state);
+// console.log(newState);
